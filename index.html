@@ -7,10 +7,13 @@
   <title></title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <style>
+  <link href="" rel="stylesheet" />
+  <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&amp;display=swap" rel="stylesheet" />
+  <style type="text/css">
     .navbar {
       padding-left: 30px !important;
       background-image: url('/res/Splash\ Screen.png');
@@ -33,7 +36,7 @@
       padding-left: 280px !important;
       color: white;
       width: 50vw;
-      
+
     }
 
     .carousel {
@@ -64,7 +67,6 @@
       width: 30vw;
       height: 66vh;
       border-radius: 20px;
-      padding-top: 40px;
       display: flex;
       justify-content: center;
       box-shadow: 0px 0px 8px #bababa;
@@ -143,73 +145,131 @@
         font-size: 3.5rem;
       }
     }
+
+    /* Extra small devices (phones, 600px and down) */
+    @media only screen and (max-width: 600px) {
+      .navbar {
+        padding-left: 5px !important;
+        background-image: url('/res/Splash\ Screen.png');
+      }
+
+      .nav-item {
+        color: white !important;
+        margin-right: 30px;
+        font-weight: bold;
+      }
+
+      .navbar-brand {
+        color: white !important;
+        margin-left: 30px !important;
+      }
+
+      .carousel-item.active,
+      .carousel-item-next,
+      .carousel-item {
+        padding-left: 50px !important;
+        color: white;
+        width: auto;
+      }
+
+      .carousel {
+        background-image: url('/res/Splash\ Screen.png');
+      }
+
+      .grid-container {
+        height: auto;
+        display: grid;
+        grid-template:
+          'auto'
+          'auto'
+      }
+
+      .grid-item {
+        height: auto;
+        margin-top: 120px;
+      }
+
+      .grid-item2 {
+        visibility: none;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        width: 80vw;
+        height: fit-content;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        box-shadow: 0px 0px 8px #bababa;
+        background: rgb(0, 5, 255);
+        background: linear-gradient(360deg, rgba(0, 5, 255, 1) 0%, rgba(36, 38, 159, 1) 9%, rgba(9, 9, 121, 0.9923319669664741) 34%, rgba(3, 0, 47, 1) 98%);
+
+      }
+    }
+
+    /* Small devices (portrait tablets and large phones, 600px and up) */
+    @media only screen and (min-width: 600px) {}
+
+    /* Medium devices (landscape tablets, 768px and up) */
+    @media only screen and (min-width: 768px) {}
+
+    /* Large devices (laptops/desktops, 992px and up) */
+    @media only screen and (min-width: 992px) {}
+
+    /* Extra large devices (large laptops and desktops, 1200px and up) */
+    @media only screen and (min-width: 1200px) {}
   </style>
 </head>
 
-<body>
+<body data-gr-ext-installed="" data-new-gr-c-s-check-loaded="14.1068.0">
   <!-- navbar section -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light" style="padding-top: 30px;">
-
-    <a class="navbar-brand" href="#" style="display:flex !important;align-items: center !important;">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" style="padding-top: 30px;"><a class="navbar-brand" href="#"
+      style="display:flex !important;align-items: center !important;">
       <!-- <img src="/res/logo.png" width="110" height="70" class="d-inline-block align-top" alt="">
-      Stulyfe -->
-      <img src="/res/website logo stulyfe.png" alt="" width="130" height="30">
-    </a>
-
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+      Stulyfe --> <img alt="" height="30" src="/res/website logo stulyfe.png" width="130" />
+    </a><button aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"
+      class="navbar-toggler" data-target="#navbarNavAltMarkup" data-toggle="collapse" type="button"></button>
     <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
-      <div class="navbar-nav ml-auto text-right">
-        <a class="nav-item nav-link active" href="#">Home
-          <a class="nav-item nav-link" href="#">Courses</a>
-          <a class="nav-item nav-link" href="#">Teams</a>
-          <a class="nav-item nav-link" href="#">Blogs</a>
-          <a class="nav-item nav-link" href="#">Why Choose Stulyfe?</a>
-          <a class="nav-item nav-link" href="#">Contact Us</a>
-      </div>
+      <div class="navbar-nav ml-auto text-right"><a class="nav-item nav-link active" href="#">Home </a><a
+          class="nav-item nav-link" href="#">Courses</a> <a class="nav-item nav-link" href="#">Teams</a> <a
+          class="nav-item nav-link" href="#">Blogs</a> <a class="nav-item nav-link" href="#">Why Choose Stulyfe?</a> <a
+          class="nav-item nav-link" href="#">Contact Us</a></div>
     </div>
   </nav>
   <!-- carousel sectiom -->
+
   <div>
-    <div id="carouselContent" class="carousel slide grid-container" data-ride="carousel">
+    <div class="carousel slide grid-container" data-ride="carousel" id="carouselContent">
       <!-- carousel-slides -->
       <div class="carousel-inner grid-item" role="listbox" style="display:flex;align-items: center;">
         <div class="carousel-item active text-left p-4">
-          <h3>
-            Education is not only about studying maths, Science, Language, and History.
-            Education is also about having Values, ethics, morals, and, skills.
-          </h3>
+          <h3>Education is not only about studying maths, Science, Language, and History. Education is also about having
+            Values, ethics, morals, and, skills.</h3>
         </div>
+
         <div class="carousel-item text-left p-4">
-          <h3>
-            Gain Knowledge,
-            Have Courage, & Be Patient
-            Now, you can achieve the highest success.
-          </h3>
+          <h3>Gain Knowledge, Have Courage, &amp; Be Patient Now, you can achieve the highest success.</h3>
         </div>
+
         <div class="carousel-item text-left p-4">
           <h3>Righteousness in the heart, carves the best character out of you.</h3>
         </div>
+
         <div class="carousel-item text-left p-4">
-          <h3>Education has a value that can’t be paid.</h3>
+          <h3>Education has a value that can&rsquo;t be paid.</h3>
         </div>
       </div>
       <!-- registeration form -->
+
       <div class="carousel-form grid-item2 grid-item" style="display: flex;align-items:center">
-        <form style="text-align: center;color: white;" action="#">
-          <h5>Book Your Free Class </h5>
-          <h6>Learn from india's best teachers</h6>
-          <div class="strike">
-            <span>Enter Your Details</span>
-          </div>
-          <input type="text" class="form-control" id="name" placeholder="Student Name" required
-            style="margin-top: 20px;">
-          <input type="phone" class="form-control" id="number" placeholder="Mobile Number" required
-            style="margin-top: 15px;">
-          <div class="form-group">
-            <select class="custom-select custom-select-sm" required style="margin-top: 15px;">
+        <form action="#" style="text-align: center;color: white;">
+          <h5>Book Your Free Class</h5>
+
+          <h6>Learn from india&#39;s best teachers</h6>
+
+          <div class="strike"><span>Enter Your Details</span></div>
+          <input class="form-control" id="name" placeholder="Student Name" required="" style="margin-top: 20px;"
+            type="text" /> <input class="form-control" id="number" placeholder="Mobile Number" required=""
+            style="margin-top: 15px;" type="phone" />
+          <div class="form-group"><select class="custom-select custom-select-sm" required="" style="margin-top: 15px;">
               <option value="">Select class</option>
               <option value="1">Class 5</option>
               <option value="1">Class 6</option>
@@ -217,16 +277,13 @@
               <option value="1">Class 8</option>
               <option value="1">Class 9</option>
               <option value="1">Class 10</option>
-            </select>
-          </div>
-          <input type="email" class="form-control" id="mailid" placeholder="Email address" required
-            style="margin-top: 15px;">
-          <input type="address" class="form-control" id="mailid" placeholder="Address" required
-            style="margin-top: 15px;">
-          <button class="btn btn-dark" type="submit" style="margin-top: 20px;">Schedule a free class now</button>
+            </select></div>
+          <input class="form-control" id="mailid" placeholder="Email address" required="" style="margin-top: 15px;"
+            type="email" /> <input class="form-control" id="mailid" placeholder="Address" required=""
+            style="margin-top: 15px;" type="address" /><button class="btn btn-dark" style="margin-top: 20px;"
+            type="submit">Schedule a free class now</button>
         </form>
       </div>
-
       <a class="carousel-control-prev" href="#carouselContent" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
@@ -238,159 +295,185 @@
     </div>
   </div>
   <!-- intro section -->
+
   <div class="intro grid-container">
     <div class="grid-item" style="margin-top: 0px !important;display: flex;align-items: center;padding: 80px;">
-      <video src="/res/3D cinematic Ad.mp4" height="400" autoplay
+      <video autoplay="" height="400" src="/res/3D cinematic Ad.mp4"
         style="border-radius:10px;box-shadow: 0px 0px 15px  rgb(32, 33, 96); "></video>
     </div>
-    <div class="grid-item" style="margin-top: 0px !important;padding-top:60px;text-align: justify;padding-right: 30px;">
+
+    <div class="grid-item"
+      style="margin-top: 0px !important;padding-top:150px !important;text-align: justify;padding-right: 30px;">
       <h2>About Stulyfe</h2>
-      <p>
-        Stulyfe Education an e-learning platform designed with the modern ways of education. Every student has his/her
+
+      <p>Stulyfe Education an e-learning platform designed with the modern ways of education. Every student has his/her
         own pace, we understand this and want to give every student a platform to access according to his/her speed.
         Real education lies in its applications, and hence we have built special lessons to let students understand the
-        practical knowledge.
-        Our motto is to provide unhindered and unparalleled access to high-quality tools like videos, interactive
-        animations, fun facts, quizzes, and assessments for students to evaluate their capabilities.
-        We have covered all the basic state board syllabus starting from the simple topics like introduction to numbers
-        to the complex concepts like the anatomy of the human body. All along with the heavily weighted topics covered
-        by the CBSE board. Learn more about us by visiting our app and surfing the website.
-
-      </p>
+        practical knowledge.</p>
     </div>
   </div>
   <!-- classes animation -->
   <div
-    style="margin-bottom: 80px;background-image: url('/res/Splash\ Screen.png');background-position: center;background-size: cover;background-repeat: no-repeat;">
-    <img
-      style="height: 600px;width:100%;background-image:url('/res/Class_Animation_Gif.gif');background-position: center;background-repeat: no-repeat;background-size: cover;">
-    </img>
+    style="display: flex;justify-content: center;margin-bottom: 80px;background-image: url('/res/Splash\ Screen.png');background-position: center;background-size: cover;background-repeat: no-repeat;">
+    <img src="/res/Class_Animation_Gif.gif" alt="" style="height:auto;width:90vw;">
   </div>
   <!-- usp's section -->
+
   <div id="usp-section">
     <div id="f-1">
-      <div class=" grid-container">
+      <div class="grid-container">
         <div class="grid-item" style="margin-top: 0px !important;padding-top:180px;padding-left: 60px;">
-          <h3>Experience 3D Learning</h3>
+          <h3 style="font-family:lato;font-size:4.6rem;font-weight:900;">Experience 3D Learning</h3>
+
           <p>Get the experience of 3d animations while learning. Because the world of education should be visualized as
-            they are. </p>
+            they are.</p>
         </div>
+
         <div class="grid-item" style="margin-top: 0px !important;display: flex;align-items: center;padding: 80px;">
-          <video src="/res/3d cinematic ad with sound.webm" height="400" loop autoplay
+          <video autoplay="" height="400" loop="" muted="" src="/res/3d cinematic ad with sound.webm"
             style="border-radius:10px;box-shadow: 0px 0px 15px  rgb(32, 33, 96); "></video>
         </div>
       </div>
     </div>
+
     <div id="f-2">
-      <div class=" grid-container">
+      <div class="grid-container">
         <div class="grid-item" style="margin-top: 0px !important;display: flex;align-items: center;padding: 80px;">
-          <video src="/res/Cinematic ad1.mp4" loop height="400" autoplay
+          <video autoplay="" height="400" loop="" muted="" src="/res/Cinematic ad1.mp4"
             style="border-radius:10px;box-shadow: 0px 0px 15px  rgb(32, 33, 96); "></video>
         </div>
-        <div class="grid-item" style="margin-top: 0px !important;padding-top:180px;">
-          <h3>Education through cinematic experience</h3>
+
+        <div class="grid-item" style="margin-top: 0px !important;padding-top:90px;padding-right:25px">
+          <h3 style="font-family:lato;font-size:4.6rem;font-wight:900;">Education through cinematic experience</h3>
+
           <p>Clutch the beauty of new ways to gain knowledge, bringing you creative cinematic effects that engage you.
-            Cinematic form of videos that show you the fun of wisdom. </p>
+            Cinematic form of videos that show you the fun of wisdom.</p>
         </div>
       </div>
     </div>
+
     <div id="f-3">
-      <div class=" grid-container">
-        <div class="grid-item" style="margin-top: 0px !important;padding-top:180px;padding-left: 60px;">
-          <h3>Learn better with 2D animations</h3>
+      <div class="grid-container">
+        <div class="grid-item" style="margin-top: 0px !important;padding-top:80px;padding-left: 60px;">
+          <h3 style="font-family:lato;font-size:4.6rem;font-wight:900;">Learn better with 2D animations</h3>
+
           <p>Putting up your black and white books in all the colourful ways of imagination. Bringing life and fun to
-            all the topics. Learn through the 2d animations; that fix every lesson to your brain lockers. </p>
+            all the topics. Learn through the 2d animations; that fix every lesson to your brain lockers.</p>
         </div>
+
         <div class="grid-item" style="margin-top: 0px !important;display: flex;align-items: center;padding: 80px;">
-          <video src="/res/2D_Cinematic.mp4" loop height="400" autoplay
+          <video autoplay="" height="400" loop="" muted="" src="/res/2D_Cinematic.mp4"
             style="border-radius:10px;box-shadow: 0px 0px 15px  rgb(32, 33, 96); "></video>
         </div>
       </div>
     </div>
+
     <div id="f-4">
-      <div class=" grid-container">
+      <div class="grid-container">
         <div class="grid-item" style="margin-top: 0px !important;display: flex;align-items: center;padding: 80px;">
-          <video src="/res/3D cinematic Ad.mp4" loop height="400" autoplay
+          <video autoplay="" height="400" loop="" muted="" src="/res/3D cinematic Ad.mp4"
             style="border-radius:10px;box-shadow: 0px 0px 15px  rgb(32, 33, 96); "></video>
         </div>
-        <div class="grid-item" style="margin-top: 0px !important;padding-top:180px;">
-          <h3>Learn english to hindi</h3>
+
+        <div class="grid-item" style="margin-top: 0px !important;padding-top:80px;">
+          <h3 style="font-family:lato;font-size:4.6rem;font-wight:900;">Learn english from hindi</h3>
+
           <p>Learn the global language in the easiest ways. Get examples and notes in Hindi, to make the learning
-            process more understandable. </p>
+            process more understandable.</p>
         </div>
       </div>
     </div>
   </div>
   <!-- features list -->
+
   <div id="features">
-    <div id="sect-1" class="grid-container" style="margin-bottom:40px ;">
+    <div class="grid-container" id="sect-1" style="margin-bottom:40px ;">
       <div class="grid-item" style="display:flex !important;justify-content: center;width:40vw;align-items: center;">
         <ul>
           <li style="font-weight:bolder">Skilled Teachers</li>
-          <p>Teachers that use the promising modern methods for productive teaching sessions. </p>
           <li style="margin-top: 20px;font-weight:bolder;">Affordable Courses</li>
-          <p>All the academic progress is allotted into a pocket-friendly budget that suits every common holder. </p>
           <li style="margin-top: 20px;font-weight:bolder;">Vedic Maths</li>
-          <p>
-            Continuing the unhindered tradition of easy math solving tricks through lessons of Vedic Maths.
-          </p>
           <li style="margin-top: 20px;font-weight:bolder;">Basic Programming</li>
-          <p>Introducing scientific innovations with how-to- methods for real-life applications. </p>
           <li style="margin-top: 20px;font-weight:bolder;">Motivational Case Studies</li>
-          <p>Bringing the valour of your great martyrs and incorporating them into our youth today. </p>
         </ul>
       </div>
+
       <div class="grid-item">
-        <video src="/res/3D cinematic Ad.mp4" height="400" loop autoplay
+        <video autoplay="" height="400" loop="" src="/res/3D cinematic Ad.mp4"
           style="border-radius:10px;box-shadow: 0px 0px 15px  rgb(32, 33, 96); margin-top: 80px;"></video>
       </div>
     </div>
-    <div id="sect-2" class="grid-container" style="margin-bottom:40px ;">
+
+    <div class="grid-container" id="sect-2" style="margin-bottom:40px ;">
       <div class="grid-item">
-        <video src="/res/3D cinematic Ad.mp4" loop height="400" autoplay
+        <video autoplay="" height="400" loop="" src="/res/3D cinematic Ad.mp4"
           style="margin-left:60px;border-radius:10px;box-shadow: 0px 0px 15px  rgb(32, 33, 96); "></video>
       </div>
+
       <div class="grid-item" style="display:flex !important;justify-content: center;width:30vw;align-items: center;">
         <ul>
-          <li>24/7 Learn anywhere & anytime unlimited access</li>
-          <li style="margin-top: 20px;">Study Analysis</li>
-          <li style="margin-top: 20px;">Personalised Learning</li>
-          <li style="margin-top: 20px;">Self Learning Program</li>
-          <li style="margin-top: 20px;">Yearly Access</li>
-          <li style="margin-top: 20px;">Books, Notes and Worksheets</li>
+          <li><b>24/7 Learn anywhere &amp; anytime unlimited access</b></li>
+          <li style="margin-top: 20px;"><b>Study Analysis</b></li>
+          <li style="margin-top: 20px;"><b>Personalised Learning</b></li>
+          <li style="margin-top: 20px;"><b>Self Learning Program</b></li>
+          <li style="margin-top: 20px;"><b>Yearly Access</b></li>
+          <li style="margin-top: 20px;"><b>Books, Notes and Worksheets</b></li>
         </ul>
       </div>
     </div>
   </div>
   <!-- Blog Section -->
-  <div id="carouselContent2" class="carousel slide grid-container" data-ride="carousel">
+
+  <div class="carousel slide grid-container" data-ride="carousel" id="carouselContent2">
     <!-- carousel-slides -->
-    <div class="carousel-inner grid-item" role="listbox" style="width:97vw">
+    <div class="carousel-inner grid-item" role="listbox" style="width:97vw;display:flex;align-items:center;">
       <div class="carousel-item active text-left p-4">
         <h3>Lorem ipsum dolor sit amet.</h3>
+
         <p style="margin-top: 20px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam doloremque totam
-          beatae impedit similique minus sit molestias deserunt ratione, laborum porro laudantium dolorem odit
-          officia!</p>
-      </div>
-      <div class="carousel-item text-left p-4">
-        <h3>Lorem ipsum dolor sit amet.</h3>
-        <p style="margin-top: 20px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam doloremque totam
-          beatae impedit similique minus sit molestias deserunt ratione, laborum porro laudantium dolorem odit
-          officia!</p>
-      </div>
-      <div class="carousel-item text-left p-4">
-        <h3>Lorem ipsum dolor sit amet.</h3>
-        <p style="margin-top: 20px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam doloremque totam
-          beatae impedit similique minus sit molestias deserunt ratione, laborum porro laudantium dolorem odit
-          officia!</p>
-      </div>
-      <button style="padding: 10px 15px;border-radius: 50px;margin-left: 265px;box-shadow: 0px 0px 5px #f7a72e;
+          beatae impedit similique minus sit molestias deserunt ratione, laborum porro laudantium dolorem odit officia!
+        </p>
+        <button style="padding: 10px 15px;border-radius: 50px;box-shadow: 0px 0px 5px #f7a72e;
       ;border: none;
       background: #FF512F;
       background: -webkit-linear-gradient(to right, #F09819, #FF512F);
       /* Chrome 10-25, Safari 5.1-6 */
       background: linear-gradient(to right, #F09819, #FF512F);
       /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */">Learn More</button>
+
+      </div>
+
+      <div class="carousel-item text-left p-4">
+        <h3>Lorem ipsum dolor sit amet.</h3>
+
+        <p style="margin-top: 20px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam doloremque totam
+          beatae impedit similique minus sit molestias deserunt ratione, laborum porro laudantium dolorem odit officia!
+        </p>
+        <button style="padding: 10px 15px;border-radius: 50px;box-shadow: 0px 0px 5px #f7a72e;
+      ;border: none;
+      background: #FF512F;
+      background: -webkit-linear-gradient(to right, #F09819, #FF512F);
+      /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #F09819, #FF512F);
+      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */">Learn More</button>
+
+      </div>
+
+      <div class="carousel-item text-left p-4">
+        <h3>Lorem ipsum dolor sit amet.</h3>
+
+        <p style="margin-top: 20px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam doloremque totam
+          beatae impedit similique minus sit molestias deserunt ratione, laborum porro laudantium dolorem odit officia!
+        </p>
+        <button style="padding: 10px 15px;border-radius: 50px;box-shadow: 0px 0px 5px #f7a72e;
+      ;border: none;
+      background: #FF512F;
+      background: -webkit-linear-gradient(to right, #F09819, #FF512F);
+      /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #F09819, #FF512F);
+      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */">Learn More</button>
+
+      </div>
       <a class="carousel-control-prev" href="#carouselContent2" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
@@ -402,14 +485,14 @@
     </div>
   </div>
   <!-- video galary -->
+
   <div
     style="margin-top:60px;margin-bottom: 60px;display:grid;gap:50px;grid-template-columns: auto auto auto;padding-left: 15%;padding-right: 10%;">
     <div
       style="border-radius: 10px; padding-bottom:20px;padding-left:0px;padding-right: 0px;width: 22vw;box-shadow:0px 0px 10px #bababa;">
       <center>
-        <div>
-          <img src="/res/reclec.jpg" alt="" style="height: 40vh;width: 22vw;">
-        </div>
+        <div><img alt="" src="/res/reclec.jpg" style="height: 40vh;width: 22vw;" /></div>
+
         <h4 style="margin-top:15px ;">Subject name</h4>
         <button class="btn" style="margin-top: 3px;">Watch Now</button>
       </center>
@@ -419,21 +502,20 @@
       <div
         style="border-radius: 10px; padding-bottom:20px;padding-left:0px;padding-right: 0px;width: 22vw;box-shadow:0px 0px 10px #bababa;">
         <center>
-          <div>
-            <img src="/res/reclec.jpg" alt="" style="height: 40vh;width: 22vw;">
-          </div>
+          <div><img alt="" src="/res/reclec.jpg" style="height: 40vh;width: 22vw;" /></div>
+
           <h4 style="margin-top:15px ;">Subject name</h4>
           <button class="btn" style="margin-top: 3px;">Watch Now</button>
         </center>
       </div>
     </div>
+
     <div>
       <div
         style="border-radius: 10px; padding-bottom:20px;padding-left:0px;padding-right: 0px;width: 22vw;box-shadow:0px 0px 10px #bababa;">
         <center>
-          <div>
-            <img src="/res/reclec.jpg" alt="" style="height: 40vh;width: 22vw;">
-          </div>
+          <div><img alt="" src="/res/reclec.jpg" style="height: 40vh;width: 22vw;" /></div>
+
           <h4 style="margin-top:15px ;">Subject name</h4>
           <button class="btn" style="margin-top: 3px;">Watch Now</button>
         </center>
@@ -441,48 +523,59 @@
     </div>
   </div>
   <!-- app download section -->
+
   <div class="container"
     style="margin-bottom: 40px;border-radius: 50px;box-shadow:0px 1px 30px #4c4c4c !important;color: white ;padding-left: 80px;padding-right: 80px;padding-top: 90px;padding-bottom: 90px;background: rgb(0, 5, 255);
   background: linear-gradient(290deg, rgba(0, 5, 255, 1) 0%, rgba(36, 38, 159, 1) 9%, rgba(9, 9, 121, 0.9923319669664741) 34%, rgba(3, 0, 47, 1) 98%);">
     <div style="display: flex;justify-content: center;text-align: center;">
-      <h3>Throughout the app, you'll find distinct features that allow our students a better experience. We have not
-        only created Stulyfe with technology and developed ways of learning but also with the values of giving the right
-        knowledge, ethics, morals, and sacraments. We acknowledge that education is the key to navigating the youth of
-        India and hence we thrive to give equal and practical education to every kid.</h3>
+      <h3>THERE&#39;S NO BETTER TIME TO GET STARTED.</h3>
     </div>
+
     <div style="display: flex;justify-content: center;text-align: center;">
       <h5>Download App Now!</h5>
     </div>
+
     <div style="display:flex;justify-content:space-around;margin-top: 50px;">
-      <div><img src="/res/devices.png" alt="" style="width: 20vw; height:22vh"></div>
-      <div><img src="/res/dwnld.png" alt="" style="width: 20vw; height:22vh"></div>
+      <div><img alt="" src="/res/devices.png" style="width: 20vw; height:22vh" /></div>
+
+      <div><img alt="" src="/res/dwnld.png" style="width: 20vw; height:22vh" /></div>
+    </div>
+  </div>
+
+  <div
+    style="line-height: 1.9;margin-top:80px;margin-bottom: 80px;color: white ;padding-left: 80px;padding-right: 80px;padding-top: 120px;padding-bottom: 120px;background: rgb(0, 5, 255);
+  background: linear-gradient(290deg, rgba(0, 5, 255, 1) 0%, rgba(36, 38, 159, 1) 9%, rgba(9, 9, 121, 0.9923319669664741) 34%, rgba(3, 0, 47, 1) 98%);">
+    <div style="display: flex;justify-content: center;text-align: center;">
+      <h4>' Throughout the app, you&#39;ll find distinct features that allow our students a better experience. We have
+        not
+        only created Stulyfe with technology and developed ways of learning but also with the values of giving the right
+        knowledge, ethics, morals, and sacraments. We acknowledge that education is the key to navigating the youth of
+        India and hence we thrive to give equal and practical education to every kid. '</h4>
     </div>
   </div>
   <!-- contact us -->
+
   <div style="margin-top:20px;margin-bottom:40px;padding-top:40px;padding-bottom:40px;">
     <center>
       <h2 style="font-weight:bolder;">Contact Us</h2>
     </center>
+
     <div style="display: flex;justify-content:space-evenly;">
-      <div style="margin-left: 80px;margin-top: 60px;">
-        <img src="/res/img-01.png" alt="">
-      </div>
+      <div style="margin-left: 80px;margin-top: 60px;"><img alt="" src="/res/img-01.png" /></div>
+
       <div style="display:flex;align-items:center;">
-        <form action="">
-          <input class="form-control" id="name" type="name" placeholder="Name" style="width: 25vw;margin-top:20px;"
-            required>
-          <input class="form-control" id="email" type="email" placeholder="Email Id"
-            style="width: 25vw;margin-top:20px;" required>
-          <textarea class="form-control" id="message" type="text" required placeholder="Message"
-            style="height:20vh;width: 25vw;margin-top:20px;"></textarea>
-          <input class="btn"
+        <form action=""><input class="form-control" id="name" placeholder="Name" required=""
+            style="width: 25vw;margin-top:20px;" type="name" /> <input class="form-control" id="email"
+            placeholder="Email Id" required="" style="width: 25vw;margin-top:20px;" type="email" /><textarea
+            class="form-control" id="message" placeholder="Message" required=""
+            style="height:20vh;width: 25vw;margin-top:20px;" type="text"></textarea> <input class="btn"
             style="color:white;padding-left: 45px;padding-right: 45px;padding-top: 5px;padding-bottom: 5px;margin-top: 30px;"
-            type="submit" value="Send">
-        </form>
+            type="submit" value="Send" /></form>
       </div>
     </div>
   </div>
   <!-- footer -->
+
   <footer class="text-white bg-dark"
     style="padding-top: 60px;background: rgb(0,5,255); background: linear-gradient(270deg, rgba(0,5,255,1) 0%, rgba(36,38,159,1) 9%, rgba(9,9,121,0.9923319669664741) 34%, rgba(3,0,47,1) 98%) !important;">
     <div class="container py-4 py-lg-5" style="padding-top: 5px !important;">
@@ -490,60 +583,68 @@
         <div class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column item"
           style="display:flex;justify-content:center;padding:5px;">
           <h3 class="fs-6 text-white">Services</h3>
+
           <ul class="list-unstyled">
             <li><a class="link-light" href="#">Web design</a></li>
             <li><a class="link-light" href="#">Development</a></li>
             <li><a class="link-light" href="#">Hosting</a></li>
           </ul>
         </div>
+
         <div class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column item"
           style="display:flex;justify-content:center;padding:5px;">
           <h3 class="fs-6 text-white">About</h3>
+
           <ul class="list-unstyled">
             <li><a class="link-light" href="#">Company</a></li>
             <li><a class="link-light" href="#">Team</a></li>
             <li><a class="link-light" href="#">Legacy</a></li>
           </ul>
         </div>
+
         <div class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column item"
           style="display:flex;justify-content:center;padding:5px;">
           <h3 class="fs-6 text-white">Careers</h3>
+
           <ul class="list-unstyled">
             <li><a class="link-light" href="#">Job openings</a></li>
             <li><a class="link-light" href="#">Employee success</a></li>
             <li><a class="link-light" href="#">Benefits</a></li>
           </ul>
         </div>
+
         <div
           class="col-lg-3 text-center text-lg-start d-flex flex-column align-items-center order-first align-items-lg-start order-lg-last item social"
           style="display:flex;justify-content:center;">
           <div class="fw-bold d-flex align-items-center mb-2"><span
               class="bs-icon-sm bs-icon-rounded bs-icon-primary d-flex justify-content-center align-items-center bs-icon me-2"
-              style="margin-top: 0px;background: rgba(13,110,253,0);"><img
-                src="/res/logo.png"
-                style="width: 80px;height: 50px;"></span><span style="margin-top: 0px;">Stulyfe</span></div>
+              style="margin-top: 0px;background: rgba(13,110,253,0);"><img src="/res/logo.png"
+                style="width: 80px;height: 50px;" /></span><span style="margin-top: 0px;">Stulyfe</span></div>
+
           <p class="text-muted copyright" style="margin-top: 5px;text-align: left;">Sem eleifend donec molestie, integer
             quisque orci aliquam.</p>
         </div>
       </div>
-      <hr>
+
+      <hr />
       <div class="d-flex justify-content-between align-items-center pt-3">
-        <p class="mb-0">Copyright © 2022 Stulyfe</p>
+        <p class="mb-0">Copyright &copy; 2022 Stulyfe</p>
+
         <ul class="list-inline mb-0">
-          <li class="list-inline-item"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
-              fill="currentColor" viewBox="0 0 16 16" class="bi bi-facebook">
+          <li class="list-inline-item"><svg class="bi bi-facebook" fill="currentColor" height="1em" viewbox="0 0 16 16"
+              width="1em" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z">
               </path>
             </svg></li>
-          <li class="list-inline-item"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
-              fill="currentColor" viewBox="0 0 16 16" class="bi bi-twitter">
+          <li class="list-inline-item"><svg class="bi bi-twitter" fill="currentColor" height="1em" viewbox="0 0 16 16"
+              width="1em" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z">
               </path>
             </svg></li>
-          <li class="list-inline-item"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
-              fill="currentColor" viewBox="0 0 16 16" class="bi bi-instagram">
+          <li class="list-inline-item"><svg class="bi bi-instagram" fill="currentColor" height="1em" viewbox="0 0 16 16"
+              width="1em" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z">
               </path>
@@ -562,6 +663,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
+  <grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
 </body>
 
 </html>

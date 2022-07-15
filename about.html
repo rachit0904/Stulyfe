@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>About us - Stulyfe</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=lato:400,700,400italic,900italic&amp;display=swap">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/App-Features-Carousel.css">
+    <link rel="stylesheet" href="assets/css/Download-App-Section.css">
+    <link rel="stylesheet" href="assets/css/Features-Centered-Icons.css">
+    <link rel="stylesheet" href="assets/css/Hero-Carousel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/Simple-Slider.css">
+    <style>
+        .nav-link{
+            color:white !important;
+        }
+        @media (max-width: 480px) {
+            #img-container {
+                margin: 0px;
+                margin-left: 5px;
+                padding-top: 30px;
+                padding-bottom: 30px;
+            }
+
+            .grid-container {
+                width: 94vw;
+                display: grid;
+                grid-template: 'myArea''myArea';
+                grid-gap: 10px;
+                align-items: center;
+                padding-right: 0px;
+                justify-content: space-evenly;
+                padding-left: 20px;
+            }
+
+            .item1 {
+                width: 20rem;
+            }
+
+            .item2 {
+                width: 17rem;
+                margin-left: 5px;
+            }
+
+            #more-btn {
+                display: flex;
+                justify-content: center;
+            }
+
+            #s3-heading {
+                display: flex;
+                justify-content: center;
+            }
+
+            .nav-item {
+                font-family: sans-serif;
+                color: #ffffff;
+                text-transform: capitalize;
+                margin-right: 3px;
+                text-align: right;
+                font-size: 10px !important;
+            }
+        }
+
+        @media (min-width: 530px) {
+            .nav-item {
+                font-family: sans-serif;
+                color: #ffffff;
+                text-transform: capitalize;
+                margin-right: 3px;
+                text-align: right;
+                font-size: 12px !important;
+            }
+
+            .grid-container {
+                width: 94vw;
+                display: grid;
+                grid-template: 'myArea myArea . . ';
+                grid-gap: 15px;
+                align-items: center;
+                padding-right: 20px;
+                justify-content: space-evenly;
+            }
+
+            .col {
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+            }
+
+            .item1 {
+                width: 20rem;
+            }
+
+            .item2 {
+                width: 20rem;
+                margin-left: 35px;
+            }
+        }
+
+        @media (min-width: 1025px) {
+            #img-container {
+                margin: 0px;
+                margin-left: 30px;
+                padding-top: 30px;
+                padding-bottom: 30px;
+            }
+
+            .grid-container {
+                width: 94vw;
+                display: grid;
+                grid-template: 'myArea myArea . . ';
+                grid-gap: 10px;
+                align-items: center;
+                padding-right: 40px;
+                justify-content: space-evenly;
+                padding-left: 20px;
+            }
+
+            .item1 {
+                width: 28rem;
+            }
+
+            .item2 {
+                width: 35rem;
+                margin-left: 35px;
+            }
+
+            .navbar {
+                padding-top: 25px !important;
+            }
+
+            .nav-item {
+                font-family: sans-serif;
+                color: #ffffff;
+                text-transform: capitalize;
+                margin-right: 3px;
+                font-size: 18px;
+                text-align: right;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top" id="mainNav"
+        style="background: transparent;padding-top: 8px;padding-bottom: 8px;height: 80px;padding-left: 15px;">
+        <div class="container"><img src="assets/img/website%20logo%20stulyfe.png" style="width:5.5em;height:1.4em;" />
+            <button data-bs-toggle="collapse" data-bs-target="#navbarResponsive" class="navbar-toggler"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"
+                style="color: #ffffff;"><i class="fa fa-bars" style="color: #ffffff;"></i></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive" style="color: #ffffff;">
+                <ul class="navbar-nav ms-auto" style="color: #ffffff;">
+                    <li class="nav-item" style="color: #ffffff;"><a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Blogs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Why Stulyfe?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact
+                            Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="masthead"
+        style="background: url(&quot;assets/img/Splash%20Screen.png&quot;) center / cover no-repeat;filter: brightness(119%) contrast(149%);">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-lg-8 mx-auto position-relative">
+                    <div class="site-heading">
+                        <h1 style="font-size: 2.0rem;color:whitesmoke;">About Stulyfe</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container" id="img-container">
+        <div class="row" style="padding-left: 0px;padding-right: 0px;">
+            <div class="col" style="height: auto;">
+                <div class="grid-container">
+                    <div class="item1">
+                        <img src="assets/img/banner-left-image.png" class="item1">
+                    </div>
+                    <div class="item2">
+                        <p
+                            style="text-align: justify;display: flex;align-self: center;justify-self: center;vertical-align: middle;/*flex-wrap: wrap-reverse;">
+                            <span style="color: rgb(92, 92, 119);">Stulyfe Education is an online learning Platform. We
+                                are committed to providing unparalleled access to high quality videos for students. Our
+                                selection of tutorials includes various options to help students acquire knowledge,
+                                upgrade their skills or even learn something completely new.</span><br>
+                        </p>
+                        <div id="more-btn">
+                            <button class="btn btn-primary" type="button"
+                                style="background: rgb(0,5,255);background: linear-gradient(0deg, rgba(0,5,255,1) 0%, rgba(36,38,159,1) 9%, rgba(9,9,121,0.9923319669664741) 34%, rgba(3,0,47,1) 98%);border-radius: 30px;">LEarn
+                                More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" style="margin-top: 50px;margin-bottom: 50px;">
+        <div class="row">
+            <div class="col" id="s3-heading">
+                <h1 style="text-align: center;">We Know What Matters To You</h1>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 40px;">
+            <div class="col"><img src="assets/img/concept-clarity.png" style="width: 350px;box-shadow: 0px 0px;">
+                <p
+                    style="text-align: center;font-size: 26px;font-weight: bold;color: rgb(91,91,91);font-family: 'Open Sans', sans-serif;">
+                    Better Explanation with animations</p>
+            </div>
+            <div class="col"><img src="assets/img/cs.jpg" style="margin-top: 40px;">
+                <p
+                    style="text-align: center;font-size: 26px;font-weight: bold;color: rgb(91,91,91);font-family: 'Open Sans', sans-serif;margin-top: 70px;">
+                    <span style="color: rgb(51, 51, 51);">Conceptual clarity</span><br><span
+                        style="color: rgb(51, 51, 51);">from deep topic research</span>
+                </p>
+            </div>
+            <div class="col"><img src="assets/img/personalised-learning.png" style="width: 350px;">
+                <p
+                    style="text-align: center;font-size: 26px;font-weight: bold;color: rgb(91,91,91);font-family: 'Open Sans', sans-serif;">
+                    Personalized Learning</p>
+            </div>
+
+            <hr style="margin-top: 20px !important;">
+            <footer>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-10 col-lg-8 mx-auto">
+                            <ul class="list-inline text-center">
+                                <li class="list-inline-item"><span class="fa-stack fa-lg"><i
+                                            class="fa fa-circle fa-stack-2x"></i><i
+                                            class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></li>
+                                <li class="list-inline-item"><span class="fa-stack fa-lg"><i
+                                            class="fa fa-circle fa-stack-2x"></i><i
+                                            class="fa fa-facebook fa-stack-1x fa-inverse"></i></span></li>
+                                <li class="list-inline-item"><span class="fa-stack fa-lg"><i
+                                            class="fa fa-circle fa-stack-2x"></i><i
+                                            class="fa fa-envelope fa-stack-1x fa-inverse"></i></span></li>
+                            </ul>
+                            <p class="text-muted copyright">Copyright&nbsp;©&nbsp;Stulyfe 2022</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+            <script src="assets/js/App-Features-Carousel.js"></script>
+            <script src="assets/js/clean-blog.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.js"></script>
+            <script src="assets/js/Simple-Slider.js"></script>
+</body>
+
+</html>
