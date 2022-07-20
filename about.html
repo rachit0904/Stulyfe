@@ -18,9 +18,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.css">
     <link rel="stylesheet" href="assets/css/Simple-Slider.css">
     <style>
-        .nav-link{
-            color:white !important;
+        .nav-link {
+            color: white !important;
+            text-transform: capitalize !important;
+            font-size: 14px !important;
         }
+
+        #usp-section {
+            padding-top: 40px;
+            padding-bottom: 40px;
+            color: white;
+            box-shadow: 0px 0px 8px #bababa;
+            background: rgb(0, 5, 255);
+            background: linear-gradient(360deg, rgba(0, 5, 255, 1) 0%, rgba(36, 38, 159, 1) 9%, rgba(9, 9, 121, 0.9923319669664741) 34%, rgba(3, 0, 47, 1) 98%);
+        }
+
         @media (max-width: 480px) {
             #img-container {
                 margin: 0px;
@@ -33,6 +45,8 @@
                 width: 94vw;
                 display: grid;
                 grid-template: 'myArea''myArea';
+                margin-top: 40px;
+                margin-bottom: 40px;
                 grid-gap: 10px;
                 align-items: center;
                 padding-right: 0px;
@@ -67,9 +81,128 @@
                 text-align: right;
                 font-size: 10px !important;
             }
+
+            .dwnld-section {
+                width: 95vw;
+                margin-bottom: 50px;
+                background: rgb(0, 5, 255);
+                background: linear-gradient(90deg, rgba(0, 5, 255, 1) 0%, rgba(36, 38, 159, 1) 9%, rgba(9, 9, 121, 0.9923319669664741) 34%,
+                        rgba(3, 0, 47, 1) 98%);
+                padding-top: 60px;
+                padding-bottom: 60px;
+                margin-top: 80px !important;
+                margin-bottom: 80px !important;
+                box-shadow: 0px 0px 20px;
+                border-radius: 50px;
+            }
+
+            #dwnld-img {
+                width: 70vw;
+                height: 20vh;
+            }
+
+            #dwnld-heading {
+                font-size: 1.3rem;
+                margin-top: 20px;
+                background: rgba(255, 255, 255, 0);
+                color: var(--bs-gray-200);
+                text-align: center;
+            }
+
+            .grid-container {
+                width: 94vw;
+                display: grid;
+                margin-top: 80px;
+                margin-bottom: 80px;
+                grid-template:
+                    'myArea'
+                    'myArea';
+                grid-gap: 10px;
+                align-items: center;
+                padding-right: 0px;
+                justify-content: space-evenly;
+                padding-left: 20px;
+            }
+
+            .f1-grid-item {
+                margin-top: 0px !important;
+                padding-top: 0px;
+                text-align: center;
+                width: 90vw;
+            }
+
+            .f1-gi1-d1-h {
+                padding-left: 46% !important;
+                text-align: center;
+            }
+
+            .f2-gi1-d1-h {
+
+                text-align: center;
+            }
+
+            .f1-gi1-d1-p {
+                width: 80vw;
+                margin-left: 28%;
+            }
+
+            .f1-gi1-d2 {
+                margin-top: 0px !important;
+                display: flex;
+                align-items: center;
+                padding: 80px;
+            }
+
+            .f1-gi2-d2 {
+                margin-top: 0px !important;
+                padding-top: 0px;
+                width: 90vw;
+                margin-left: 14%;
+                text-align: center;
+                padding-left: 18px;
+                padding-right: 18px;
+            }
+
+            .f1-gi1-d2-vid {
+                width: 90vw;
+                border-radius: 10px;
+                box-shadow: 0px 0px 15px rgb(32 33 96);
+            }
+
+            .f2-gi2-h {
+                font-family: lato;
+                font-size: 2.4rem;
+                font-wight: 900;
+                padding-left: 4%;
+            }
         }
 
         @media (min-width: 530px) {
+            .dwnld-section {
+                width: 95vw;
+                margin-bottom: 50px;
+                background: rgb(0, 5, 255);
+                background: linear-gradient(90deg, rgba(0, 5, 255, 1) 0%, rgba(36, 38, 159, 1) 9%, rgba(9, 9, 121, 0.9923319669664741) 34%,
+                        rgba(3, 0, 47, 1) 98%);
+                padding-top: 80px;
+                padding-bottom: 60px;
+                box-shadow: 0px 0px 20px;
+                border-radius: 50px;
+            }
+
+            #dwnld-img {
+                width: 35vw;
+                height: 30vh;
+            }
+
+            #dwnld-heading {
+                font-size: 1.3rem;
+                margin-top: 20px;
+                background: rgba(255, 255, 255, 0);
+                color: var(--bs-gray-200);
+                text-align: center;
+            }
+
             .nav-item {
                 font-family: sans-serif;
                 color: #ffffff;
@@ -82,6 +215,8 @@
             .grid-container {
                 width: 94vw;
                 display: grid;
+                margin-top: 90px;
+                margin-bottom: 90px;
                 grid-template: 'myArea myArea . . ';
                 grid-gap: 15px;
                 align-items: center;
@@ -105,6 +240,76 @@
         }
 
         @media (min-width: 1025px) {
+            .f3-grid-item {
+                margin-top: 0px !important;
+                padding-top: 80px;
+                padding-left: 60px;
+            }
+
+            .f1-grid-item {
+                margin-top: 0px !important;
+                padding-top: 0px;
+                text-align: center;
+                width: 30vw;
+                margin-left: 20vw;
+            }
+
+            .f4-grid-item {
+                margin-top: 0px !important;
+                display: flex;
+                align-items: center;
+            }
+
+            .f1-gi2-d2 {
+                margin-top: 0px !important;
+                padding-top: 0px;
+                padding-left: 0px;
+                width: 30vw
+            }
+
+            .f1-gi1-d2-vid {
+                width: 45vw;
+                border-radius: 10px;
+                box-shadow: 0px 0px 15px rgb(32, 33, 96);
+            }
+
+            .f1-gi1-d1-h {
+                font-family: lato;
+                font-size: 3.6rem;
+                font-weight: 900;
+            }
+
+            .f2-gi2-h {
+                font-family: lato;
+                font-size: 3.6rem;
+                font-wight: 900;
+            }
+
+            #dwnld-heading {
+                font-size: 1.8rem;
+                margin-top: 20px;
+                background: rgba(255, 255, 255, 0);
+                color: var(--bs-gray-200);
+                text-align: center;
+            }
+
+            .dwnld-section {
+                width: 95vw;
+                margin-bottom: 50px;
+                background: rgb(0, 5, 255);
+                background: linear-gradient(90deg, rgba(0, 5, 255, 1) 0%, rgba(36, 38, 159, 1) 9%, rgba(9, 9, 121, 0.9923319669664741) 34%,
+                        rgba(3, 0, 47, 1) 98%);
+                padding-top: 80px;
+                padding-bottom: 60px;
+                box-shadow: 0px 0px 20px;
+                border-radius: 50px;
+            }
+
+            #dwnld-img {
+                width: 25vw;
+                height: 30vh;
+            }
+
             #img-container {
                 margin: 0px;
                 margin-left: 30px;
@@ -114,6 +319,8 @@
 
             .grid-container {
                 width: 94vw;
+                margin-top: 80px;
+                margin-bottom: 80px;
                 display: grid;
                 grid-template: 'myArea myArea . . ';
                 grid-gap: 10px;
@@ -133,7 +340,7 @@
             }
 
             .navbar {
-                padding-top: 25px !important;
+                padding-top: 30px !important;
             }
 
             .nav-item {
@@ -197,15 +404,16 @@
             <div class="col" style="height: auto;">
                 <div class="grid-container">
                     <div class="item1">
-                        <img src="assets/img/banner-left-image.png" class="item1">
+                        <img src="/res/Self learning.png" class="item1">
                     </div>
                     <div class="item2">
                         <p
                             style="text-align: justify;display: flex;align-self: center;justify-self: center;vertical-align: middle;/*flex-wrap: wrap-reverse;">
-                            <span style="color: rgb(92, 92, 119);">Stulyfe Education is an online learning Platform. We
-                                are committed to providing unparalleled access to high quality videos for students. Our
-                                selection of tutorials includes various options to help students acquire knowledge,
-                                upgrade their skills or even learn something completely new.</span><br>
+                            <span style="color: rgb(92, 92, 119);">Stulyfe Education - an e-learning platform designed
+                                with the modern ways of education. Every student has his/her own pace, we understand
+                                this and want to give every student a platform to access according to his/her speed.
+                                Real education lies in its applications, and hence we have built special lessons to let
+                                students understand the practical knowledge. </span><br>
                         </p>
                         <div id="more-btn">
                             <button class="btn btn-primary" type="button"
@@ -213,6 +421,94 @@
                                 More
                             </button>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="usp-section" class="">
+        <div id="f-1">
+            <div class="grid-container" style="padding-left: 0px;">
+                <div class="grid-item f1-grid-item">
+                    <div class="f1-gi1-d1-h">
+                        <h3>Experience 3D Learning</h3>
+                    </div>
+                    <div class="f1-gi1-d1-p">
+                        <p>Get the experience of 3d animations while learning. Because the world of
+                            education should be
+                            visualized as
+                            they are.</p>
+                    </div>
+                </div>
+
+                <div class="grid-item f1-gi1-d2"
+                    style="margin-top: 0px !important;display: flex;align-items: center;padding:80px">
+                    <video id="usp-media" class="f1-gi1-d2-vid " autoplay="" loop="" muted=""
+                        src="/res/3d cinematic ad with sound.webm"></video>
+                </div>
+            </div>
+        </div>
+
+        <div id="f-2">
+            <div class="grid-container">
+                <div class="grid-item f1-gi1-d2"
+                    style="margin-top: 0px !important;display: flex;align-items: center;padding: 80px;">
+                    <video class="f1-gi1-d2-vid" autoplay="" loop="" muted="" src="/res/Cinematic ad1.mp4"></video>
+                </div>
+
+                <div class="grid-item f1-gi2-d2">
+                    <div class="f2-gi1-d1-h">
+                        <h3>Education through
+                            cinematic experience
+                        </h3>
+                    </div>
+                    <div class="f2-gi1-d1-p">
+                        <p>Clutch the beauty of new ways to gain knowledge, bringing you creative
+                            cinematic effects that
+                            engage you.
+                            Cinematic form of videos that show you the fun of wisdom.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="f-3">
+            <div class="grid-container" style="padding-left: 0px;">
+                <div class="grid-item f1-grid-item">
+                    <div class="f1-gi1-d1-h">
+                        <h3>Lively topics with 2d animations. </h3>
+                    </div>
+                    <div class="f1-gi1-d1-p">
+                        <p>Putting up your black and white books in all the colourful ways of imagination. Bringing life
+                            and fun to all the topics. Learn through the 2d animations; that fix every lesson to your
+                            brain lockers.</p>
+                    </div>
+                </div>
+
+                <div class="grid-item f1-gi1-d2"
+                    style="margin-top: 0px !important;display: flex;align-items: center;padding:80px">
+                    <video id="usp-media" class="f1-gi1-d2-vid " autoplay="" loop="" muted=""
+                        src="/res/3d cinematic ad with sound.webm"></video>
+                </div>
+            </div>
+        </div>
+
+        <div id="f-4">
+            <div class="grid-container">
+                <div class="grid-item f1-gi1-d2"
+                    style="margin-top: 0px !important;display: flex;align-items: center;padding: 80px;">
+                    <video class="f1-gi1-d2-vid" autoplay="" loop="" muted="" src="/res/Cinematic ad1.mp4"></video>
+                </div>
+
+                <div class="grid-item f1-gi2-d2">
+                    <div class="f2-gi1-d1-h">
+                        <h3>Learn Global language; English from Hindi
+                        </h3>
+                    </div>
+                    <div class="f2-gi1-d1-p">
+                        <p>Learn the global language in the easiest ways. Get examples and notes in Hindi, to make the
+                            learning process more understandable. </p>
                     </div>
                 </div>
             </div>
@@ -242,6 +538,25 @@
                 <p
                     style="text-align: center;font-size: 26px;font-weight: bold;color: rgb(91,91,91);font-family: 'Open Sans', sans-serif;">
                     Personalized Learning</p>
+            </div>
+
+            <div class="container dwnld-section">
+                <div class="row">
+                    <div class="col">
+                        <h1 id="dwnld-heading">
+                            There's No Better Time To Get Started</h1>
+                        <h1 id="dwnld-heading">
+                            <strong><span
+                                    style="color: var(--bs-gray-200); background-color: rgba(255, 255, 255, 0);">Download
+                                    The
+                                    App Now!</span></strong><br>
+                        </h1>
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 50px;text-align: center;">
+                    <div class="col"><img id="dwnld-img" src="assets/img/devices.png"></div>
+                    <div class="col"><img id="dwnld-img" src="assets/img/dwnld.png"></div>
+                </div>
             </div>
 
             <hr style="margin-top: 20px !important;">

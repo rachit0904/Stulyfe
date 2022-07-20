@@ -111,8 +111,9 @@
       padding-top: 40px;
       padding-bottom: 40px;
       color: white;
+      box-shadow: 0px 0px 8px #bababa;
       background: rgb(0, 5, 255);
-      background: linear-gradient(270deg, rgba(0, 5, 255, 1) 0%, rgba(36, 38, 159, 1) 9%, rgba(9, 9, 121, 0.9923319669664741) 34%, rgba(3, 0, 47, 1) 98%);
+      background: linear-gradient(360deg, rgba(0, 5, 255, 1) 0%, rgba(36, 38, 159, 1) 9%, rgba(9, 9, 121, 0.9923319669664741) 34%, rgba(3, 0, 47, 1) 98%);
     }
 
     .btn {
@@ -140,82 +141,313 @@
       user-select: none;
     }
 
+    @media (max-width: 480px) {
+      #img-container {
+        margin: 0px;
+        margin-left: 5px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+      }
+
+      .grid-container {
+        width: 94vw;
+        display: grid;
+        grid-template: 'myArea''myArea';
+        grid-gap: 10px;
+        align-items: center;
+        padding-right: 0px;
+        justify-content: space-evenly;
+        padding-left: 20px;
+      }
+
+      .item1 {
+        width: 20rem;
+      }
+
+      .item2 {
+        width: 17rem;
+        margin-left: 5px;
+      }
+
+      #more-btn {
+        display: flex;
+        justify-content: center;
+      }
+
+      #s3-heading {
+        display: flex;
+        justify-content: center;
+      }
+
+      .nav-item {
+        font-family: sans-serif;
+        color: #ffffff;
+        text-transform: capitalize;
+        margin-right: 3px;
+        text-align: right;
+        font-size: 10px !important;
+      }
+
+      .dwnld-section {
+        width: 95vw;
+        margin-bottom: 50px;
+        background: rgb(0, 5, 255);
+        background: linear-gradient(90deg, rgba(0, 5, 255, 1) 0%, rgba(36, 38, 159, 1) 9%, rgba(9, 9, 121, 0.9923319669664741) 34%,
+            rgba(3, 0, 47, 1) 98%);
+        padding-top: 60px;
+        padding-bottom: 60px;
+        margin-top: 80px !important;
+        margin-bottom: 80px !important;
+        box-shadow: 0px 0px 20px;
+        border-radius: 50px;
+      }
+
+      #dwnld-img {
+        width: 70vw;
+        height: 20vh;
+      }
+
+      #dwnld-heading {
+        font-size: 1.3rem;
+        margin-top: 20px;
+        background: rgba(255, 255, 255, 0);
+        color: var(--bs-gray-200);
+        text-align: center;
+      }
+
+      .grid-container {
+        width: 94vw;
+        display: grid;
+        grid-template:
+          'myArea'
+          'myArea';
+        grid-gap: 10px;
+        align-items: center;
+        padding-right: 0px;
+        justify-content: space-evenly;
+        padding-left: 20px;
+      }
+
+      .f1-grid-item {
+        margin-top: 0px !important;
+        padding-top: 0px;
+        text-align: center;
+        width: 90vw;
+      }
+
+      .f1-gi1-d1-h {
+        padding-left: 46% !important;
+        text-align: center;
+      }
+
+      .f2-gi1-d1-h {
+
+        text-align: center;
+      }
+
+      .f1-gi1-d1-p {
+        width: 80vw;
+        margin-left: 28%;
+      }
+
+      .f1-gi1-d2 {
+        margin-top: 0px !important;
+        display: flex;
+        align-items: center;
+        padding: 80px;
+      }
+
+      .f1-gi2-d2 {
+        margin-top: 0px !important;
+        padding-top: 0px;
+        width: 90vw;
+        margin-left: 14%;
+        text-align: center;
+        padding-left: 18px;
+        padding-right: 18px;
+      }
+
+      .f1-gi1-d2-vid {
+        width: 90vw;
+        border-radius: 10px;
+        box-shadow: 0px 0px 15px rgb(32 33 96);
+      }
+
+      .f2-gi2-h {
+        font-family: lato;
+        font-size: 2.4rem;
+        font-wight: 900;
+        padding-left: 4%;
+      }
+    }
+
+    @media (min-width: 530px) {
+      .dwnld-section {
+        width: 95vw;
+        margin-bottom: 50px;
+        background: rgb(0, 5, 255);
+        background: linear-gradient(90deg, rgba(0, 5, 255, 1) 0%, rgba(36, 38, 159, 1) 9%, rgba(9, 9, 121, 0.9923319669664741) 34%,
+            rgba(3, 0, 47, 1) 98%);
+        padding-top: 80px;
+        padding-bottom: 60px;
+        box-shadow: 0px 0px 20px;
+        border-radius: 50px;
+      }
+
+      #dwnld-img {
+        width: 35vw;
+        height: 30vh;
+      }
+
+      #dwnld-heading {
+        font-size: 1.3rem;
+        margin-top: 20px;
+        background: rgba(255, 255, 255, 0);
+        color: var(--bs-gray-200);
+        text-align: center;
+      }
+
+      .nav-item {
+        font-family: sans-serif;
+        color: #ffffff;
+        text-transform: capitalize;
+        margin-right: 3px;
+        text-align: right;
+        font-size: 12px !important;
+      }
+
+      .grid-container {
+        padding-bottom: 100px;
+        display: grid;
+        grid-template: 'myArea myArea . . ';
+        grid-gap: 15px;
+        align-items: center;
+        padding-right: 20px;
+        justify-content: space-evenly;
+      }
+
+      .col {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+      }
+
+      .item1 {
+        width: 20rem;
+      }
+
+      .item2 {
+        width: 20rem;
+        margin-left: 35px;
+      }
+    }
+
+    @media (min-width: 1025px) {
+      .f3-grid-item {
+        margin-top: 0px !important;
+        padding-top: 80px;
+        padding-left: 60px;
+      }
+
+      .f1-grid-item {
+        margin-top: 0px !important;
+        padding-top: 0px;
+        text-align: center;
+        width: 30vw;
+        margin-left: 20vw;
+      }
+
+      .f4-grid-item {
+        margin-top: 0px !important;
+        display: flex;
+        align-items: center;
+      }
+
+      .f1-gi2-d2 {
+        margin-top: 0px !important;
+        padding-top: 0px;
+        padding-left: 0px;
+        width: 30vw
+      }
+
+      .f1-gi1-d2-vid {
+        width: 45vw;
+        border-radius: 10px;
+        box-shadow: 0px 0px 15px rgb(32, 33, 96);
+      }
+
+      .f1-gi1-d1-h {
+        font-family: lato;
+        font-size: 3.6rem;
+        font-weight: 900;
+      }
+
+      .f2-gi2-h {
+        font-family: lato;
+        font-size: 3.6rem;
+        font-wight: 900;
+      }
+
+      #dwnld-heading {
+        font-size: 1.8rem;
+        margin-top: 20px;
+        background: rgba(255, 255, 255, 0);
+        color: var(--bs-gray-200);
+        text-align: center;
+      }
+
+      .dwnld-section {
+        width: 95vw;
+        margin-bottom: 50px;
+        background: rgb(0, 5, 255);
+        background: linear-gradient(90deg, rgba(0, 5, 255, 1) 0%, rgba(36, 38, 159, 1) 9%, rgba(9, 9, 121, 0.9923319669664741) 34%,
+            rgba(3, 0, 47, 1) 98%);
+        padding-top: 80px;
+        padding-bottom: 60px;
+        box-shadow: 0px 0px 20px;
+        border-radius: 50px;
+      }
+
+      #dwnld-img {
+        width: 25vw;
+        height: 30vh;
+      }
+
+      #img-container {
+        margin: 0px;
+        margin-left: 30px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+      }
+
+
+      .item1 {
+        width: 28rem;
+      }
+
+      .item2 {
+        width: 35rem;
+        margin-left: 35px;
+      }
+
+      .navbar {
+        padding-top: 30px !important;
+      }
+
+      .nav-item {
+        font-family: sans-serif;
+        color: #ffffff;
+        text-transform: capitalize;
+        margin-right: 3px;
+        font-size: 18px;
+        text-align: right;
+      }
+    }
+
     @media (min-width: 768px) {
       .bd-placeholder-img-lg {
         font-size: 3.5rem;
       }
     }
-
-    /* Extra small devices (phones, 600px and down) */
-    @media only screen and (max-width: 600px) {
-      .navbar {
-        padding-left: 5px !important;
-        background-image: url('/res/Splash\ Screen.png');
-      }
-
-      .nav-item {
-        color: white !important;
-        margin-right: 30px;
-        font-weight: bold;
-      }
-
-      .navbar-brand {
-        color: white !important;
-        margin-left: 30px !important;
-      }
-
-      .carousel-item.active,
-      .carousel-item-next,
-      .carousel-item {
-        padding-left: 50px !important;
-        color: white;
-        width: auto;
-      }
-
-      .carousel {
-        background-image: url('/res/Splash\ Screen.png');
-      }
-
-      .grid-container {
-        height: auto;
-        display: grid;
-        grid-template:
-          'auto'
-          'auto'
-      }
-
-      .grid-item {
-        height: auto;
-        margin-top: 120px;
-      }
-
-      .grid-item2 {
-        visibility: none;
-        padding-top: 40px;
-        padding-bottom: 40px;
-        width: 80vw;
-        height: fit-content;
-        border-radius: 20px;
-        display: flex;
-        justify-content: center;
-        box-shadow: 0px 0px 8px #bababa;
-        background: rgb(0, 5, 255);
-        background: linear-gradient(360deg, rgba(0, 5, 255, 1) 0%, rgba(36, 38, 159, 1) 9%, rgba(9, 9, 121, 0.9923319669664741) 34%, rgba(3, 0, 47, 1) 98%);
-
-      }
-    }
-
-    /* Small devices (portrait tablets and large phones, 600px and up) */
-    @media only screen and (min-width: 600px) {}
-
-    /* Medium devices (landscape tablets, 768px and up) */
-    @media only screen and (min-width: 768px) {}
-
-    /* Large devices (laptops/desktops, 992px and up) */
-    @media only screen and (min-width: 992px) {}
-
-    /* Extra large devices (large laptops and desktops, 1200px and up) */
-    @media only screen and (min-width: 1200px) {}
   </style>
 </head>
 
@@ -261,9 +493,9 @@
 
       <div class="carousel-form grid-item2 grid-item" style="display: flex;align-items:center">
         <form action="#" style="text-align: center;color: white;">
-          <h5>Book Your Free Class</h5>
+          <h5>Complete Learning Solution</h5>
 
-          <h6>Learn from india&#39;s best teachers</h6>
+          <h6>Aim for your child's academic excellence</h6>
 
           <div class="strike"><span>Enter Your Details</span></div>
           <input class="form-control" id="name" placeholder="Student Name" required="" style="margin-top: 20px;"
@@ -279,9 +511,9 @@
               <option value="1">Class 10</option>
             </select></div>
           <input class="form-control" id="mailid" placeholder="Email address" required="" style="margin-top: 15px;"
-            type="email" /> <input class="form-control" id="mailid" placeholder="Address" required=""
+            type="email" /> <input class="form-control" id="mailid" placeholder="Location" required=""
             style="margin-top: 15px;" type="address" /><button class="btn btn-dark" style="margin-top: 20px;"
-            type="submit">Schedule a free class now</button>
+            type="submit">Register now</button>
         </form>
       </div>
       <a class="carousel-control-prev" href="#carouselContent" role="button" data-slide="prev">
@@ -298,12 +530,12 @@
 
   <div class="intro grid-container">
     <div class="grid-item" style="margin-top: 0px !important;display: flex;align-items: center;padding: 80px;">
-      <video autoplay="" height="400" src="/res/3D cinematic Ad.mp4"
-        style="border-radius:10px;box-shadow: 0px 0px 15px  rgb(32, 33, 96); "></video>
+      <video autoplay="" loop height="400" src="/res/Stulyfe marvel intro.webm"
+        style="border-radius: 10px;"></video>
     </div>
 
     <div class="grid-item"
-      style="margin-top: 0px !important;padding-top:150px !important;text-align: justify;padding-right: 30px;">
+      style="margin-top: 0px !important;padding-top:0px !important;text-align: justify;padding-right: 30px;">
       <h2>About Stulyfe</h2>
 
       <p>Stulyfe Education an e-learning platform designed with the modern ways of education. Every student has his/her
@@ -319,71 +551,94 @@
   </div>
   <!-- usp's section -->
 
-  <div id="usp-section">
+  <div id="usp-section" class="">
     <div id="f-1">
-      <div class="grid-container">
-        <div class="grid-item" style="margin-top: 0px !important;padding-top:180px;padding-left: 60px;">
-          <h3 style="font-family:lato;font-size:4.6rem;font-weight:900;">Experience 3D Learning</h3>
-
-          <p>Get the experience of 3d animations while learning. Because the world of education should be visualized as
-            they are.</p>
+      <div class="grid-container" style="padding-left: 0px;">
+        <div class="grid-item f1-grid-item">
+          <div class="f1-gi1-d1-h">
+            <h3>Experience 3D Learning</h3>
+          </div>
+          <div class="f1-gi1-d1-p">
+            <p>Get the experience of 3d animations while learning. Because the world of
+              education should be
+              visualized as
+              they are.</p>
+          </div>
         </div>
 
-        <div class="grid-item" style="margin-top: 0px !important;display: flex;align-items: center;padding: 80px;">
-          <video autoplay="" height="400" loop="" muted="" src="/res/3d cinematic ad with sound.webm"
-            style="border-radius:10px;box-shadow: 0px 0px 15px  rgb(32, 33, 96); "></video>
+        <div class="grid-item f1-gi1-d2"
+          style="margin-top: 0px !important;display: flex;align-items: center;padding:80px">
+          <video id="usp-media" class="f1-gi1-d2-vid " autoplay="" loop="" muted=""
+            src="/res/3d cinematic ad with sound.webm"></video>
         </div>
       </div>
     </div>
 
     <div id="f-2">
       <div class="grid-container">
-        <div class="grid-item" style="margin-top: 0px !important;display: flex;align-items: center;padding: 80px;">
-          <video autoplay="" height="400" loop="" muted="" src="/res/Cinematic ad1.mp4"
-            style="border-radius:10px;box-shadow: 0px 0px 15px  rgb(32, 33, 96); "></video>
+        <div class="grid-item f1-gi1-d2"
+          style="margin-top: 0px !important;display: flex;align-items: center;padding: 80px;">
+          <video class="f1-gi1-d2-vid" autoplay="" loop="" muted="" src="/res/Cinematic ad1.mp4"></video>
         </div>
 
-        <div class="grid-item" style="margin-top: 0px !important;padding-top:90px;padding-right:25px">
-          <h3 style="font-family:lato;font-size:4.6rem;font-wight:900;">Education through cinematic experience</h3>
-
-          <p>Clutch the beauty of new ways to gain knowledge, bringing you creative cinematic effects that engage you.
-            Cinematic form of videos that show you the fun of wisdom.</p>
+        <div class="grid-item f1-gi2-d2">
+          <div class="f2-gi1-d1-h">
+            <h3>Education through
+              cinematic experience
+            </h3>
+          </div>
+          <div class="f2-gi1-d1-p">
+            <p>Clutch the beauty of new ways to gain knowledge, bringing you creative
+              cinematic effects that
+              engage you.
+              Cinematic form of videos that show you the fun of wisdom.</p>
+          </div>
         </div>
       </div>
     </div>
 
     <div id="f-3">
-      <div class="grid-container">
-        <div class="grid-item" style="margin-top: 0px !important;padding-top:80px;padding-left: 60px;">
-          <h3 style="font-family:lato;font-size:4.6rem;font-wight:900;">Learn better with 2D animations</h3>
-
-          <p>Putting up your black and white books in all the colourful ways of imagination. Bringing life and fun to
-            all the topics. Learn through the 2d animations; that fix every lesson to your brain lockers.</p>
+      <div class="grid-container" style="padding-left: 0px;">
+        <div class="grid-item f1-grid-item">
+          <div class="f1-gi1-d1-h">
+            <h3>Lively topics with 2d animations. </h3>
+          </div>
+          <div class="f1-gi1-d1-p">
+            <p>Putting up your black and white books in all the colourful ways of imagination. Bringing life
+              and fun to all the topics. Learn through the 2d animations; that fix every lesson to your
+              brain lockers.</p>
+          </div>
         </div>
 
-        <div class="grid-item" style="margin-top: 0px !important;display: flex;align-items: center;padding: 80px;">
-          <video autoplay="" height="400" loop="" muted="" src="/res/2D_Cinematic.mp4"
-            style="border-radius:10px;box-shadow: 0px 0px 15px  rgb(32, 33, 96); "></video>
+        <div class="grid-item f1-gi1-d2"
+          style="margin-top: 0px !important;display: flex;align-items: center;padding:80px">
+          <video id="usp-media" class="f1-gi1-d2-vid " autoplay="" loop="" muted="" src="/res/2D_Cinematic.mp4"></video>
         </div>
       </div>
     </div>
 
     <div id="f-4">
       <div class="grid-container">
-        <div class="grid-item" style="margin-top: 0px !important;display: flex;align-items: center;padding: 80px;">
-          <video autoplay="" height="400" loop="" muted="" src="/res/3D cinematic Ad.mp4"
-            style="border-radius:10px;box-shadow: 0px 0px 15px  rgb(32, 33, 96); "></video>
+        <div class="grid-item f1-gi1-d2"
+          style="margin-top: 0px !important;display: flex;align-items: center;padding: 80px;">
+          <video class="f1-gi1-d2-vid" autoplay="" loop="" muted=""
+            src="/res/Learn hindi to english with bg.mp4"></video>
         </div>
 
-        <div class="grid-item" style="margin-top: 0px !important;padding-top:80px;">
-          <h3 style="font-family:lato;font-size:4.6rem;font-wight:900;">Learn english from hindi</h3>
-
-          <p>Learn the global language in the easiest ways. Get examples and notes in Hindi, to make the learning
-            process more understandable.</p>
+        <div class="grid-item f1-gi2-d2">
+          <div class="f2-gi1-d1-h">
+            <h3>Learn Global language; English from Hindi
+            </h3>
+          </div>
+          <div class="f2-gi1-d1-p">
+            <p>Learn the global language in the easiest ways. Get examples and notes in Hindi, to make the
+              learning process more understandable. </p>
+          </div>
         </div>
       </div>
     </div>
   </div>
+
   <!-- features list -->
 
   <div id="features">
@@ -399,15 +654,14 @@
       </div>
 
       <div class="grid-item">
-        <video autoplay="" height="400" loop="" src="/res/3D cinematic Ad.mp4"
-          style="border-radius:10px;box-shadow: 0px 0px 15px  rgb(32, 33, 96); margin-top: 80px;"></video>
+        <video autoplay="" height="400" loop="" src="/res/Skilled teachers with bg.mp4"
+          style=" margin-top: 80px;"></video>
       </div>
     </div>
 
     <div class="grid-container" id="sect-2" style="margin-bottom:40px ;">
       <div class="grid-item">
-        <video autoplay="" height="400" loop="" src="/res/3D cinematic Ad.mp4"
-          style="margin-left:60px;border-radius:10px;box-shadow: 0px 0px 15px  rgb(32, 33, 96); "></video>
+        <img autoplay="" height="400" loop="" src="/res/Yearly_Access.gif" style="margin-left:60px;"></img>
       </div>
 
       <div class="grid-item" style="display:flex !important;justify-content: center;width:30vw;align-items: center;">
@@ -524,21 +778,21 @@
   </div>
   <!-- app download section -->
 
-  <div class="container"
-    style="margin-bottom: 40px;border-radius: 50px;box-shadow:0px 1px 30px #4c4c4c !important;color: white ;padding-left: 80px;padding-right: 80px;padding-top: 90px;padding-bottom: 90px;background: rgb(0, 5, 255);
-  background: linear-gradient(290deg, rgba(0, 5, 255, 1) 0%, rgba(36, 38, 159, 1) 9%, rgba(9, 9, 121, 0.9923319669664741) 34%, rgba(3, 0, 47, 1) 98%);">
-    <div style="display: flex;justify-content: center;text-align: center;">
-      <h3>THERE&#39;S NO BETTER TIME TO GET STARTED.</h3>
+  <div class="container dwnld-section" style="color:white">
+    <div class="row">
+      <div class="col">
+        <h1 id="dwnld-heading">
+          There's No Better Time To Get Started</h1>
+        <h1 id="dwnld-heading">
+          <strong><span style="color: var(--bs-gray-200); background-color: rgba(255, 255, 255, 0);">Download
+              The
+              App Now!</span></strong><br>
+        </h1>
+      </div>
     </div>
-
-    <div style="display: flex;justify-content: center;text-align: center;">
-      <h5>Download App Now!</h5>
-    </div>
-
-    <div style="display:flex;justify-content:space-around;margin-top: 50px;">
-      <div><img alt="" src="/res/devices.png" style="width: 20vw; height:22vh" /></div>
-
-      <div><img alt="" src="/res/dwnld.png" style="width: 20vw; height:22vh" /></div>
+    <div class="row" style="margin-top: 50px;text-align: center;">
+      <div class="col"><img id="dwnld-img" src="assets/img/devices.png"></div>
+      <div class="col"><img id="dwnld-img" src="assets/img/dwnld.png"></div>
     </div>
   </div>
 
@@ -580,33 +834,38 @@
     style="padding-top: 60px;background: rgb(0,5,255); background: linear-gradient(270deg, rgba(0,5,255,1) 0%, rgba(36,38,159,1) 9%, rgba(9,9,121,0.9923319669664741) 34%, rgba(3,0,47,1) 98%) !important;">
     <div class="container py-4 py-lg-5" style="padding-top: 5px !important;">
       <div class="row justify-content-center">
-        <div class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column item"
-          style="display:flex;justify-content:center;padding:5px;">
-          <h3 class="fs-6 text-white">Services</h3>
+        <div class="col-sm-4 col-md-3 text-left text-lg-start d-flex flex-column item"
+          style="display:flex;justify-content:flex-start;padding:5px;">
+          <h3 class="fs-6 text-white">Courses</h3>
 
-          <ul class="list-unstyled">
-            <li><a class="link-light" href="#">Web design</a></li>
-            <li><a class="link-light" href="#">Development</a></li>
-            <li><a class="link-light" href="#">Hosting</a></li>
+          <ul class="list-unstyled" style="text-align: left;">
+            <li><a class="link-light" href="#">Class 5</a></li>
+            <li><a class="link-light" href="#">Class 6</a></li>
+            <li><a class="link-light" href="#">Class 7</a></li>
+            <li><a class="link-light" href="#">Class 8</a></li>
+            <li><a class="link-light" href="#">Class 9 (Upcomming)</a></li>
+            <li><a class="link-light" href="#">Class 10 (Upomming)</a></li>
           </ul>
         </div>
 
-        <div class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column item"
-          style="display:flex;justify-content:center;padding:5px;">
-          <h3 class="fs-6 text-white">About</h3>
+        <div class="col-sm-4 col-md-3 text-left text-lg-start d-flex flex-column item"
+          style="display:flex;justify-content:flex-start;padding:5px;">
+          <h3 class="fs-6 text-white">Company</h3>
 
-          <ul class="list-unstyled">
-            <li><a class="link-light" href="#">Company</a></li>
-            <li><a class="link-light" href="#">Team</a></li>
-            <li><a class="link-light" href="#">Legacy</a></li>
+          <ul class="list-unstyled" style="text-align: left;">
+            <li><a class="link-light" href="#">About Us</a></li>
+            <li><a class="link-light" href="#">Our Team</a></li>
+            <li><a class="link-light" href="#">Support</a></li>
+            <li><a class="link-light" href="#">Privacy Policy</a></li>
+            <li><a class="link-light" href="#">Terms and Conditions</a></li>
           </ul>
         </div>
 
-        <div class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column item"
-          style="display:flex;justify-content:center;padding:5px;">
+        <div class="col-sm-4 col-md-3 text-left text-lg-start d-flex flex-column item"
+          style="display:flex;justify-content:flex-start;padding:5px;align-items: flex-start;">
           <h3 class="fs-6 text-white">Careers</h3>
 
-          <ul class="list-unstyled">
+          <ul class="list-unstyled" style="text-align: left;">
             <li><a class="link-light" href="#">Job openings</a></li>
             <li><a class="link-light" href="#">Employee success</a></li>
             <li><a class="link-light" href="#">Benefits</a></li>
@@ -615,14 +874,15 @@
 
         <div
           class="col-lg-3 text-center text-lg-start d-flex flex-column align-items-center order-first align-items-lg-start order-lg-last item social"
-          style="display:flex;justify-content:center;">
+          style="display:flex;justify-content:flex-start;">
           <div class="fw-bold d-flex align-items-center mb-2"><span
               class="bs-icon-sm bs-icon-rounded bs-icon-primary d-flex justify-content-center align-items-center bs-icon me-2"
-              style="margin-top: 0px;background: rgba(13,110,253,0);"><img src="/res/logo.png"
-                style="width: 80px;height: 50px;" /></span><span style="margin-top: 0px;">Stulyfe</span></div>
+              style="margin-top: 10px;background: rgba(13,110,253,0);"><img src="/res/website logo stulyfe.png"
+                style="width: 120px;height: 26px;" /></span><span style="margin-top: 0px;"></span></div>
 
-          <p class="text-muted copyright" style="margin-top: 5px;text-align: left;">Sem eleifend donec molestie, integer
-            quisque orci aliquam.</p>
+          <p class="text-muted copyright" style="margin-top: 5px;text-align: left;color:white !important">
+            B/302, Kanchwala Park, opp Shree Hans Kalyan dham, Tagore nagar Near INOX Theatre, Nashik - Pune Rd, Nashik, Maharashtra 422006
+          </p>
         </div>
       </div>
 
